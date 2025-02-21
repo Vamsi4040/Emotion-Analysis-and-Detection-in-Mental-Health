@@ -90,7 +90,7 @@ Three main models were implemented:
 This study demonstrates the potential of NLP techniques for detecting depression and other emotions from text data. While advanced models like BERT and DistilBERT show promise in capturing nuanced emotional signals, challenges such as data imbalance and overfitting persist. Future work should focus on improving preprocessing methods, exploring ensemble strategies, and incorporating multimodal data (e.g., images, audio) to enhance model performance and robustness.
 
 
-### Installation
+## Installation
 Clone the repository and install the dependencies with:
 ```bash
 pip install -r requirements.txt
