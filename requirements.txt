@@ -1,3 +1,5 @@
+# Emotion Analysis and Detection in Mental Health Using Natural Language Processing Techniques
+
 pandas==1.5.3
 numpy==1.23.5
 matplotlib==3.6.3
@@ -8,3 +10,40 @@ torch==1.13.1
 scikit-learn==1.2.2
 gradio==4.26.0
 transformers==4.26.1
+
+
+
+## Libraries and Tools
+The project uses the following libraries and tools. Here are the import statements used in the code:
+
+```python
+# Basic Libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from wordcloud import WordCloud
+
+# Text Preprocessing
+import re
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+
+# PyTorch Libraries
+import torch
+import torch.nn as nn
+from torch.utils.data import Dataset, DataLoader
+from torch.optim import Adam
+
+# Machine Learning Utilities
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.preprocessing import LabelEncoder
+
+# Gradio for Real-Time Interface
+import gradio as gr
+
+# Transformer Models
+from transformers import BertTokenizer, BertForSequenceClassification
+from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
