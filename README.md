@@ -35,6 +35,22 @@ The literature indicates that while advanced models can outperform traditional m
 ### Dataset Collection and Preprocessing
 The dataset used in this study was collected from social media platforms—primarily Twitter and Reddit—where users express a broad spectrum of emotions. Posts are labeled according to various emotional states (e.g., sadness, anger, joy) and are further categorized based on whether they indicate depressive symptoms.
 
+### Dataset
+
+The dataset (`tweet_emotions.csv`) was created in-house and contains real-world social media posts with the following columns:
+
+- **tweet_id:** Unique identifier.
+- **Emotion:** Labeled emotional state (e.g., sadness, anger, neutral, etc.).
+- **Text:** Original tweet content.
+
+### Preprocessing Steps
+
+- **Text Cleaning:** Remove URLs, mentions, hashtags, punctuation, and special characters; convert text to lowercase.
+- **Tokenization:** Split text into tokens.
+- **Stopword Removal:** Remove common words (e.g., "the", "and", "of").
+- **Lemmatization:** Reduce words to their base forms.
+
+
 #### Data Preparation Steps:
 1. **Text Cleaning:**  
    - **Removal of Noise:** URLs, mentions, hashtags, punctuation, and special characters are removed.
@@ -91,6 +107,16 @@ The training pipeline included:
 - **Conversion to Tensors:** Transforming vectorized data into PyTorch tensors for model input.
 - **Training Loop:** Monitoring training and validation losses and accuracies over epochs.
 - **Evaluation Metrics:** Accuracy, precision, recall, and F1-scores were calculated to assess model performance. A confusion matrix was also generated to visualize misclassifications among the 13 classes.
+
+/////////////- HERE Example Visuals:
+
+Loss Plot:
+
+Figure 1: Training and Validation Loss over Epochs.
+
+Accuracy Plot:
+
+Figure 2: Training and Validation Accuracy over Epochs.///////////////////
 
 ## Results and Analysis
 
@@ -156,3 +182,17 @@ git clone https://github.com/yourusername/emotion-analysis.git
 cd emotion-analysis
 pip install -r requirements.txt
 ```
+
+## References
+
+1. A. Li, D. Jiao, and T. Zhu, “Detecting depression stigma on social media: A linguistic analysis,” *Journal of Affective Disorders*, vol. 232, pp. 358–362, 2018.
+2. L. Squarcina, F. M. Villa, M. Nobile, E. Grisan, and P. Brambilla, “Deep learning for the prediction of treatment response in depression,” *Journal of Affective Disorders*, vol. 281, pp. 618–622, 2021.
+3. T. Zhang, A. M. Schoene, S. Ji, and S. Ananiadou, “Natural language processing applied to mental illness detection: A narrative review,” *NPJ Digital Medicine*, vol. 5, no. 1, pp. 1–13, 2022.
+4. A. Leis, F. Ronzano, M. A. Mayer, L. I. Furlong, and F. Sanz, “Detecting signs of depression in tweets in Spanish: Behavioral and linguistic analysis,” *Journal of Medical Internet Research*, vol. 21, no. 6, p. e14199, 2019.
+5. L. S. Jones, E. Anderson, M. Loades, R. Barnes, and E. Crawley, “Can linguistic analysis be used to identify whether adolescents with a chronic illness are depressed?,” *Clinical Psychology & Psychotherapy*, vol. 27, no. 2, pp. 179–192, 2020.
+6. A. Picardi et al., “A randomized controlled trial of the effectiveness of a program for early detection and treatment of depression in primary care,” *Journal of Affective Disorders*, vol. 198, pp. 96–101, 2016.
+7. K. Rost, J. L. Smith, and M. Dickinson, “The effect of improving primary care depression management on employee absenteeism and productivity: A randomized trial,” *Medical Care*, vol. 42, no. 12, pp. 1202–1210, 2004.
+8. Statista, “Number of worldwide social network users,” 2023. [Online]. Available: [https://www.statista.com/statistics/278414/number-of-worldwide-socialnetwork-users/](https://www.statista.com/statistics/278414/number-of-worldwide-socialnetwork-users/). [Accessed: 08-Dec-2024].
+9. DataReportal, “Social media users,” 2023. [Online]. Available: [https://datareportal.com/social-media-users](https://datareportal.com/social-media-users). [Accessed: 08-Dec-2024].
+10. A. Dhand, D. A. Luke, C. E. Lang, and J. M. Lee, “Social networks and neurological illness,” *Nature Reviews Neurology*, vol. 12, no. 10, pp. 605–612, 2016.
+
