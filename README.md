@@ -3,7 +3,7 @@
 ## Abstract
 Mental health issues, particularly depression, have become a global concern affecting millions of lives. Early identification and intervention are crucial for mitigating their impact. With the rise of social media platforms, text-based expressions of emotions have become a valuable resource for mental health detection. This study explores the application of Natural Language Processing (NLP) techniques to detect depression from textual data. Using data collected from platforms like Twitter, the research employs preprocessing steps—such as tokenization and lemmatization—and advanced machine learning models, including CNN-LSTM and transformer-based models (BERT and DistilBERT). The results indicate that while deep learning models show promise, performance is constrained by data imbalances and complex emotional nuances, highlighting the need for further improvements in model architecture and preprocessing techniques.
 
-## Keywords
+### Keywords
 Emotion Analysis, Natural Language Processing, Mental Health Detection, Depression, Social Media, CNN-LSTM, BERT, DistilBERT, Preprocessing, Tokenization, Word Embeddings, Real-time Applications
 
 ## Introduction
