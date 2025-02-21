@@ -11,6 +11,16 @@ Depressive disorder, commonly referred to as depression, is a widespread mental 
 
 Traditional diagnostic methods—relying on clinical interviews and self-report surveys—are not only time-consuming but also subject to human error. Recent advances in NLP have demonstrated that the linguistic patterns in a person’s text (e.g., social media posts) can offer crucial insights into their mental state. This project harnesses these techniques to automatically detect depression by analyzing the text shared on social media, thereby potentially enabling early intervention and better long-term health outcomes.
 
+## Problem Statement
+Depression is a pervasive mental health issue that significantly impacts lives worldwide. Traditional diagnostic methods are time-consuming and error-prone. This project addresses the need for an automated, data-driven approach to detect depression from social media text, which can help in early intervention and support mental health diagnostics.
+
+## Objectives
+- **Automated Emotion Detection:** Detect depression and related emotional states from social media text using NLP.
+- **Model Comparison:** Implement and compare multiple models (Emotion Classifier, BERT, DistilBERT).
+- **Real-Time Prediction:** Develop an interactive interface for real-time emotion classification using Gradio.
+- **Data Analysis:** Perform extensive EDA to understand emotional trends and text characteristics.
+- **Identify Challenges:** Address issues such as data imbalance and overfitting while suggesting potential improvements.
+
 ## Related Work
 Depression detection via text analysis has attracted significant attention in recent years due to the vast amounts of available social media data. Early studies employed sentiment analysis to classify text based on emotional tone, while subsequent research incorporated more complex linguistic and statistical methods—such as topic modeling and affective computing. Traditional machine learning algorithms (e.g., Support Vector Machines, Random Forests, Naive Bayes) have been used in earlier efforts, but they often struggled with the inherent complexity of human language, particularly in informal contexts.
 
